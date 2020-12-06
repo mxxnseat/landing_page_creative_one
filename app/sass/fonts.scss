@@ -1,0 +1,12 @@
+@mixin font($name, $url){
+	@font-face{
+		font-family: $name;
+		src: url($url);
+	}
+}
+
+@include font("gotham-bold", "../fonts/Gotham-Bold.ttf");
+@include font("gotham-book", "../fonts/Gotham-Book.ttf");
+@include font("gotham-medium", "../fonts/Gotham-Medium.ttf");
+@include font("roboto", "../fonts/roboto.ttf");
+@import "fontawesome/font-awesome.scss";
